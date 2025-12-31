@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>DOAB Auto-PDF Resolver</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body { margin:0; font-family:Georgia, serif; background:#f3f4f6; }
+    header {
+      background:#1e293b;
+      color:#fff;
+      padding:14px;
+      text-align:center;
+      font-size:18px;
+    }
+    .badge {
+      background:#16a34a;
+      padding:4px 8px;
+      border-radius:4px;
+      font-size:12px;
+      margin-left:8px;
+    }
+    iframe {
+      width:100%;
+      height:92vh;
+      border:none;
+      background:white;
+    }
+    .loading {
+      padding:40px;
+      text-align:center;
+      font-size:16px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  📘 Open-Access Book
+  <span class="badge">Auto PDF</span>
+</header>
+
+<div id="viewer" class="loading">Resolving PDF…</div>
+
+<script>
+/* ==== INPUT (normally DOAB / OpenAlex se aata) ==== */
+const book = {
+  title: "Sample Open-Access Book",
+  pdfCandidate: "https://www.openbookpublishers.com/books/download/1234.pdf",
+  landingPage: "https://www.openbookpublishers.com/books/10.11647/OBP.1234"
+};
+
+/* ==== PDF CHECK FUNCTION ==== */
+async function checkPDF(url) {
+  try {
+    const res = await fetch(url, { method: "HEAD" });
+    return res.ok;
+  } catch (e) {
+    return false;
+  }
+}
+
+/* ==== AUTO-RESOLVER ==== */
+(async () => {
+  const container = document.getElementById("viewer");
+
+  if (book.pdfCandidate && book.pdfCandidate.endsWith(".pdf")) {
+    const ok = await checkPDF(book.pdfCandidate);
+
+    if (ok) {
+      container.innerHTML = `
+        <iframe src="${book.pdfCandidate}"></iframe>
+      `;
+      return;
+    }
+  }
+
+  /* ==== FALLBACK: LANDING PAGE ==== */
+  container.innerHTML = `
+    <iframe src="${book.landingPage}"></iframe>
+  `;
+})();
+</script>
+
+</body>
+</html>
