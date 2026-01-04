@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BharatVerse — Bharat Search Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- MAIN CONTENT -->
+  <main id="home" class="container active">
+
+    <!-- LOGO -->
+    <div class="logo-box">
+      <img src="logo.png" class="logo" />
+    </div>
+
+    <h1 class="brand-title">BharatVerse</h1>
+    <p class="brand-sub">Bharat Search Hub</p>
+
+    <!-- SEARCH -->
+    <div class="search-box">
+      <input type="text" placeholder="Search India & World Knowledge…" />
+      <button>🔍</button>
+    </div>
+
+    <!-- INFO -->
+    <section class="info-grid"></section>
+
+  </main>
+
+  <!-- SHORTS -->
+  <section id="shorts" class="page">
+    <h2 class="section-title">🔥 BharatVerse Shorts</h2>
+
+    <!-- YouTube Shorts Embed Area -->
+    <div class="shorts-feed" id="shorts-feed">
+      <!-- JS will inject iframe embeds here -->
+    </div>
+
+    <p class="shorts-note">
+      Powered by YouTube • Curated by BharatVerse
+    </p>
+  </section>
+
+  <!-- NEWS -->
+  <section id="news" class="page">
+    <h2 class="section-title">📰 Global News</h2>
+
+    <!-- GitHub RAW link placeholder -->
+    <div class="news-placeholder">
+      <p>📌 Connect your GitHub RAW JSON here</p>
+      <code>
+        https://raw.githubusercontent.com/username/repo/main/news.json
+      </code>
+    </div>
+  </section>
+
+  <!-- BOTTOM NAV -->
+  <nav class="bottom-nav">
+    <button onclick="switchTab('home')" class="active">🏠<span>Home</span></button>
+    <button onclick="switchTab('shorts')">🎬<span>Shorts</span></button>
+    <button onclick="switchTab('news')">📰<span>News</span></button>
+    <button>⚙️<span>More</span></button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
