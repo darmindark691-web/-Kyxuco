@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BharatVerse — Bharat Search Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- HOME PAGE -->
+<main id="home" class="page active">
+
+  <!-- AQI LIST (example) -->
+  <section class="aqi-list">
+    <div class="card">
+      <h3>Seoul, South Korea</h3>
+      <p>AQI: 87</p>
+      <span class="good">Good</span>
+    </div>
+
+    <div class="card">
+      <h3>Islamabad, Pakistan</h3>
+      <p>AQI: 168</p>
+      <span class="moderate">Moderate</span>
+    </div>
+  </section>
+
+  <!-- SHORTS PREVIEW (HOME) -->
+  <section class="shorts-preview" onclick="openShortsFromHome()">
+    <h2>🔥 BharatVerse Shorts</h2>
+
+    <div class="short-preview-grid">
+      <div class="short-thumb">
+        <span class="play">▶</span>
+      </div>
+      <div class="short-thumb">
+        <span class="play">▶</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FULL SHORTS PAGE -->
+<section id="shorts" class="page">
+  <div class="shorts-header">
+    <h2>🔥 BharatVerse Shorts</h2>
+    <p>
+      Curated by <b>BharatVerse</b> ·
+      <a href="https://www.youtube.com/shorts" target="_blank">YouTube</a>
+    </p>
+  </div>
+
+  <div id="shortsFeed" class="shorts-feed"></div>
+
+  <div class="loading">Loading more shorts…</div>
+</section>
+
+<!-- NEWS PAGE -->
+<section id="news" class="page">
+  <h2 class="section-title">📰 News</h2>
+  <div class="news-placeholder">
+    GitHub RAW link yahan connect hoga
+  </div>
+</section>
+
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav">
+  <button class="active" onclick="switchTab('home', this)">🏠<span>Home</span></button>
+  <button onclick="switchTab('shorts', this)">🎬<span>Shorts</span></button>
+  <button onclick="switchTab('news', this)">📰<span>News</span></button>
+  <button>⚙️<span>More</span></button>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
