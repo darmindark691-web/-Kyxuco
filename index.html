@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BharatVerse — Bharat Search Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- MENU BUTTON -->
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<!-- SIDE MENU -->
+<aside id="sideMenu" class="side-menu">
+  <h2>📚 BharatVerse</h2>
+
+  <div class="menu-section">
+    <h3>arXiv (Research)</h3>
+    <ul>
+      <li onclick="loadArxiv('cs.AI')">AI</li>
+      <li onclick="loadArxiv('cs.LG')">Machine Learning</li>
+      <li onclick="loadArxiv('cs.CL')">NLP / LLMs</li>
+      <li onclick="loadArxiv('cs.CV')">Computer Vision</li>
+      <li onclick="loadArxiv('cs.CR')">Security</li>
+      <li onclick="loadArxiv('cs.RO')">Robotics</li>
+      <li onclick="loadArxiv('math.OC')">Optimization</li>
+      <li onclick="loadArxiv('stat.ML')">Stat ML</li>
+      <li onclick="loadArxiv('physics.gen-ph')">Physics</li>
+    </ul>
+  </div>
+
+  <div class="menu-section">
+    <h3>bioRxiv</h3>
+    <ul>
+      <li onclick="openExternal('https://www.biorxiv.org/subject/bioinformatics')">Bioinformatics</li>
+      <li onclick="openExternal('https://www.biorxiv.org/subject/genetics')">Genetics</li>
+      <li onclick="openExternal('https://www.biorxiv.org/subject/genomics')">Genomics</li>
+      <li onclick="openExternal('https://www.biorxiv.org/subject/neuroscience')">Neuroscience</li>
+      <li onclick="openExternal('https://www.biorxiv.org/subject/microbiology')">Microbiology</li>
+    </ul>
+  </div>
+
+  <div class="menu-section">
+    <h3>ChemRxiv</h3>
+    <ul>
+      <li onclick="openExternal('https://chemrxiv.org')">Organic Chemistry</li>
+      <li onclick="openExternal('https://chemrxiv.org')">Physical Chemistry</li>
+      <li onclick="openExternal('https://chemrxiv.org')">Materials</li>
+    </ul>
+  </div>
+
+  <div class="menu-section">
+    <h3>Open Knowledge</h3>
+    <ul>
+      <li onclick="openExternal('https://zenodo.org')">Zenodo</li>
+      <li onclick="openExternal('https://github.com/topics/research')">GitHub Research</li>
+    </ul>
+  </div>
+
+  <div class="menu-section">
+    <h3>Cyber Security</h3>
+    <ul>
+      <li onclick="openExternal('https://www.usenix.org/publications')">USENIX</li>
+      <li onclick="openExternal('https://owasp.org/www-project-top-ten/')">OWASP</li>
+    </ul>
+  </div>
+</aside>
+
+<!-- PAPERS PANEL -->
+<section id="papersPanel" class="papers-panel">
+  <div class="papers-header">
+    <span>Research Papers</span>
+    <button onclick="closePapers()">✕</button>
+  </div>
+  <div id="papersList" class="papers-list"></div>
+</section>
+
+<!-- ORIGINAL UI (UNCHANGED) -->
+<main class="container">
+
+  <div class="logo-box">
+    <img src="logo.png" alt="BharatVerse Logo" class="logo">
+  </div>
+
+  <h1 class="brand-title">BharatVerse</h1>
+  <p class="brand-sub">Bharat Search Hub</p>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search India & World Knowledge…" />
+    <button>🔍</button>
+  </div>
+
+  <section class="info-grid"></section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
