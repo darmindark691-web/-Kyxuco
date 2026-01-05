@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BharatVerse — Bharat Search Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- ☰ MENU BUTTON (TOP LEFT) -->
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<!-- SIDE MENU -->
+<aside id="sideMenu" class="side-menu">
+  <h2>📚 Research Papers</h2>
+
+  <ul class="menu-list">
+    <li onclick="loadPapers('cs.AI')">Artificial Intelligence</li>
+    <li onclick="loadPapers('cs.LG')">Machine Learning</li>
+    <li onclick="loadPapers('cs.CL')">NLP / LLMs</li>
+    <li onclick="loadPapers('cs.CV')">Computer Vision</li>
+    <li onclick="loadPapers('cs.RO')">Robotics</li>
+    <li onclick="loadPapers('cs.SE')">Software Engineering</li>
+    <li onclick="loadPapers('cs.CR')">Cyber Security</li>
+    <li onclick="loadPapers('cs.DS')">Data Structures</li>
+    <li onclick="loadPapers('math.PR')">Probability</li>
+    <li onclick="loadPapers('math.OC')">Optimization</li>
+    <li onclick="loadPapers('physics.optics')">Optics</li>
+    <li onclick="loadPapers('physics.soc-ph')">Social Physics</li>
+    <li onclick="loadPapers('econ.EM')">Economics</li>
+    <li onclick="loadPapers('q-fin.ML')">Quant Finance</li>
+    <li onclick="loadPapers('stat.ML')">Statistical ML</li>
+  </ul>
+</aside>
+
+<!-- PAPERS OVERLAY -->
+<section id="papersPanel" class="papers-panel">
+  <div class="papers-header">
+    <h2>arXiv Research Papers</h2>
+    <button onclick="closePapers()">✖</button>
+  </div>
+
+  <div id="papersList" class="papers-list">
+    <p>Select a category to load papers…</p>
+  </div>
+</section>
+
+<!-- ORIGINAL UI (UNCHANGED) -->
+<main class="container">
+
+  <div class="logo-box">
+    <img src="logo.png" alt="BharatVerse Logo" class="logo">
+  </div>
+
+  <h1 class="brand-title">BharatVerse</h1>
+  <p class="brand-sub">Bharat Search Hub</p>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search India & World Knowledge…" />
+    <button>🔍</button>
+  </div>
+
+  <section class="info-grid"></section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
