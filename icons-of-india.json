@@ -1,0 +1,54 @@
+{
+  "source": "Wikimedia Commons",
+  "usage": "Educational & Informational purpose only",
+  "sections": [
+    {
+      "title": "Eminent Personalities of India",
+      "subtitle": "Leaders who shaped the foundation of the nation",
+      "items": [
+        {
+          "name": "Dr. B. R. Ambedkar",
+          "role": "Architect of the Indian Constitution",
+          "description": "Principal architect of India’s Constitution and a lifelong champion of equality, education, and social justice.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Dr._Bhimrao_Ambedkar.jpg"
+        },
+        {
+          "name": "Netaji Subhas Chandra Bose",
+          "role": "Leader of the Indian National Army",
+          "description": "A fearless nationalist who organized the Indian National Army and gave a new direction to India’s freedom struggle.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Netaji_Subhas_Chandra_Bose.jpg"
+        },
+        {
+          "name": "Shaheed Bhagat Singh",
+          "role": "Revolutionary Patriot",
+          "description": "A symbol of courage and sacrifice whose ideals inspired generations of Indians to fight for freedom.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/5/54/Bhagat_Singh_1929.jpg"
+        },
+        {
+          "name": "Mahatma Gandhi",
+          "role": "Father of the Nation",
+          "description": "Leader of India’s independence movement who led the nation through the principles of truth and non-violence.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Mahatma_Gandhi_photo.jpg"
+        },
+        {
+          "name": "Shivaram Rajguru",
+          "role": "Freedom Fighter",
+          "description": "A revolutionary patriot remembered for his decisive role in the struggle against British rule.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Rajguru456.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Sacrifices of Saints — Eminent Souls of India",
+      "subtitle": "Spiritual courage that protected humanity and faith",
+      "items": [
+        {
+          "name": "Sri Guru Tegh Bahadur Ji",
+          "role": "Hind Di Chadar",
+          "description": "Remembered for his supreme sacrifice in defense of religious freedom, human dignity, and righteousness.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Guru_maharaja.jpg"
+        }
+      ]
+    }
+  ]
+}
