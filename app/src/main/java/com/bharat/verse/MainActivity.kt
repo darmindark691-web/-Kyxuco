@@ -1,4 +1,4 @@
-package com.bharatverse
+package com.bharat.verse
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
